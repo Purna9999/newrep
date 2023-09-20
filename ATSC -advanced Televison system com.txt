@@ -1,0 +1,114 @@
+ATSC ->advanced Televison system commitee
+
+DVB -> Digital video boardcasting
+DBDS -> Digital Boardband Delivary System
+DNCS –> Digital Network Control System
+
+
+MPEG ->Moving Picture Experts Group
+ASI -> Asynchronous Serial Interface
+TS -> Transport Stream
+HFC->Hybrid Fiber Cable
+BFS -> Broadcast File System
+
+CPE-> Customer Premises Equipment
+CAS-> A Conditional Access System
+VOD -> video On Demand
+
+VSRM-> Video Session Resourse manager
+AVCC-> Auxillary Video Core Ctrl
+RPD -> Remote PHY device
+PSI table-> Program specific information table
+TED –> Transaction Encryption Device
+
+MTU-> Maximum Trasnmission Unit
+
+SDT -> Service description table
+EIT -> Event information
+
+
+----------------------------------------------
+
+ATSC ->advanced Televison system commitee
+	This is the updated version of digital video boardcasting with HD quality and sound
+DVB -> Digital video boardcasting
+analog to digital-> sine wave is converted into 0's and 1's
+
+-> The term ATSC relate to TV signals that are received over the air (known as OTA), using an antenna or aerial.
+->QAM refers to TV signals that are received via cable.
+
+HEADEND Point ->In cable TV, the head end is where the cable company locates its satellite dish and TV antenna for receiving incoming programming. In online services, the head end is the service company's computer system and databases
+
+ATSC uses Dolby codec(an algorithm that compress and decompress the audio) for audio purpose
+
+MPEG:Moving Picture Experts Group
+(is a standard for "the generic coding of moving pictures and associated audio information".It describes a combination of lossy video compression and lossy audio data compression methods, which permit storage and transmission of movies using currently available storage media and transmission bandwidth.)
+
+TS -> Transport Stream
+which is a media container format. It may contain a number of streams of audio or video content
+
+
+Analog to Digital is done by sampling
+
+	->normal sampling gives you SD qyality
+	->more sampling gives tou HD quality
+
+Digital TV advantage
+	->Quadrature Amplitude Modulation(QAM)
+HFC->Hybrid Fiber Cable
+---------------------------------------
+DBDS -> Digital Boardband Delivary System
+CPE-> Customer Premises Equipment(a device kept at customer end example routers telphone,setup box)
+
+CAS->
+A Conditional Access System or a CA system uses the scrambling and encryption techniques to prevent the reception that is not authorized. 
+Scrambling is a process of making the data, photos as well as music incomprehensible. Encryption on the other hand is a process of protecting the data that is sent over a network using keys. The encrypted data is transferred over a scrambled signal.
+
+powerkey CAS 
+PowerKEY Video On Demand is used in a Cisco cable environment to provide edge-encrypted video-on-demand movies and other content to subscribers.
+
+VOD -> video On Demand(asking for a channel to the service provider and then the service provider does QAM to that channel and sents the good quality to the customer)
+	this is a two way communication(switched digital video)
+
+VSRM-> Video Session Resourse manager
+AVCC-> Auxillary Video Core Ctrl
+
+MTU-> Maximum Trasnmission Unit(maximum size of each packet in any transmission.where a 1500-byte packet is the largest allowed.)
+-----------------------------------------
+
+Headend -> it recevices signal from satillite and goes through multipke processes like QAM,SMS,encryption and then sent to the setupbox
+
+==============================================
+
+RPD -> Remote PHY device
+	network devices located in the field closer to cable subscribers.they receive digital signal and produce 	Radio frequency that is tranmitted to through the coaxile cable to subcribers home.
+	(RPD) at the network edge converts the downstream data transmitted from the core from digital to analog 	and transforms upstream
+	 data from end users from analog to digital format. The RPD includes QAM modulators for downstream 	translation and QAM demodulators for upstream 	traffic. 
+
+first we must configure the RPD and then we will receive video from auxillary video core by specifying IP address.
+
+"Auxillary video core is s functional component that porduce,process,manage the video content and stream to end users."
+core functionallity are:
+	video processing	->process the video signal includes encoding decoding,transcoding
+	content managagment	->manages,scheduling and controlling what is being distributed
+	Multiplexing		->combing multiple video steaming to a single stream and passing through transport stream
+	encryption		->encrpting the content and viewing to subscribers only
+	CAS			->controlling content to be visible to subcribers
+	streaming		->distribution of video content on various networks like cable,satellite,IP
+
+
+	
+PSI table-> Program specific information table
+	provides customer oriented information to setupbox(STB)
+	>Channel name
+	>Channel line up
+	>channel select numbers
+DVB SI table
+	>this table allows service providers to offer programs and services accross large
+	 network that may include multiple trenasport stream.
+	>enables receviers and setupbox to access info anywhere in the MPEG of muliplex
+
+
+
+
+
